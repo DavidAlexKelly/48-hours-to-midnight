@@ -1,0 +1,438 @@
+/* mobile-responsive.css */
+/* Base mobile styles - apply to all screen sizes under 768px */
+@media (max-width: 768px) {
+  /* Navigation adjustments */
+  nav {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .nav-title {
+    font-size: 1.2rem;
+  }
+  
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  
+  .nav-buttons .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Hero section */
+  section {
+    padding: 6rem 1.5rem;
+  }
+  
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 1.5rem;
+  }
+  
+  /* Main heading in hero */
+  .hero-heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  /* Buttons - make full width and stack */
+  button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Stats grid - single column */
+  .grid-auto-fit {
+    grid-template-columns: 1fr;
+  }
+  
+  /* War cards - reduce padding */
+  .war-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Story cards in expandable sections */
+  .stories-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Emoji sizing */
+  .stat-emoji {
+    font-size: 3rem;
+  }
+  
+  .war-emoji {
+    font-size: 3.5rem;
+  }
+  
+  /* Reduce all heading sizes */
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  /* Paragraphs and body text */
+  p {
+    font-size: 1rem;
+  }
+  
+  /* Lists */
+  li {
+    font-size: 1rem;
+  }
+  
+  /* Solution section */
+  .solution-primary {
+    padding: 2rem 1.5rem;
+  }
+  
+  .solution-title {
+    font-size: 1.8rem;
+  }
+  
+  .solution-subtitle {
+    font-size: 1rem;
+  }
+  
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Follow-up measure cards */
+  .follow-up-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .follow-up-heading {
+    font-size: 1.5rem;
+  }
+  
+  /* CTA section */
+  .cta-buttons {
+    width: 100%;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .cta-highlight {
+    font-size: 1.2rem;
+  }
+  
+  .cta-action {
+    font-size: 1.2rem;
+  }
+  
+  .cta-quote p {
+    font-size: 1.1rem;
+  }
+  
+  /* Solution CTA */
+  .solution-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  .solution-cta-text {
+    font-size: 1.2rem;
+  }
+  
+  .solution-cta-emphasis {
+    font-size: 1.4rem;
+  }
+  
+  /* Contact Us Section */
+  .contact-us-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-us-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-us-icon {
+    font-size: 2.5rem;
+  }
+  
+  .contact-us-link {
+    font-size: 1rem;
+  }
+  
+  /* Sources section links */
+  a {
+    word-break: break-word;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 3rem 1.5rem;
+  }
+  
+  .footer-quote {
+    font-size: 1.2rem;
+  }
+  
+  /* Scroll indicator */
+  .scroll-indicator {
+    display: none;
+  }
+  
+  /* Divider centered */
+  .divider-centered {
+    margin-bottom: 3rem;
+  }
+  
+  /* Contact Hero */
+  .contact-hero {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+  }
+  
+  .contact-intro {
+    font-size: 1.1rem;
+  }
+  
+  /* Letter Section */
+  .letter-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .copy-button {
+    width: 100%;
+  }
+  
+  .letter-content {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .letter-tips {
+    padding: 1.5rem;
+  }
+  
+  /* WriteToThem Section */
+  .writetothem-card {
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .writetothem-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .writetothem-content p {
+    font-size: 1rem;
+  }
+  
+  .writetothem-button {
+    width: 100%;
+  }
+  
+  .writetothem-stats {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .writetothem-stat .stat-value {
+    font-size: 2rem;
+  }
+  
+  /* Contacts Section */
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-name {
+    font-size: 1.2rem;
+  }
+  
+  /* Actions Grid */
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-card {
+    padding: 1.5rem;
+  }
+  
+  .action-emoji {
+    font-size: 2.5rem;
+  }
+  
+  /* Back Section */
+  .back-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Very small screens - under 480px */
+@media (max-width: 480px) {
+  nav {
+    padding: 0.75rem 1rem;
+  }
+  
+  .nav-title {
+    font-size: 1rem;
+  }
+  
+  .nav-buttons {
+    gap: 0.4rem;
+  }
+  
+  .nav-buttons .nav-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  section {
+    padding: 4rem 1rem;
+  }
+  
+  .hero-section {
+    padding: 4rem 1rem;
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .war-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .solution-primary {
+    padding: 1.5rem 1rem;
+  }
+  
+  .solution-badge {
+    left: 20px;
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .follow-up-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-hero {
+    padding-top: 6rem;
+  }
+  
+  .contact-heading {
+    font-size: 1.75rem;
+  }
+  
+  .letter-content {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .writetothem-card {
+    padding: 1.5rem;
+  }
+  
+  .writetothem-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Tablet landscape - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 6rem 2rem;
+  }
+  
+  .hero-section {
+    padding: 6rem 2rem;
+  }
+  
+  nav {
+    padding: 1.5rem 2rem;
+  }
+  
+  .nav-buttons {
+    gap: 0.75rem;
+  }
+  
+  .nav-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .solution-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .follow-up-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .contact-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
