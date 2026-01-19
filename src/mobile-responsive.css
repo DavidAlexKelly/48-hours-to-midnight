@@ -1,232 +1,352 @@
-/* mobile-responsive.css */
-/* Base mobile styles - apply to all screen sizes under 768px */
+/* mobile-responsive.css - IMPROVED VERSION */
+
+/* Ensure proper box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base mobile styles - under 768px */
 @media (max-width: 768px) {
-  /* Navigation adjustments */
+  
+  /* Force text to not overflow */
+  body {
+    overflow-x: hidden;
+  }
+  
+  .app-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Navigation - simplified mobile nav */
   nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
+    gap: 0.75rem;
+    align-items: stretch;
   }
   
   .nav-title {
-    font-size: 1.2rem;
-  }
-  
-  .nav-button {
-    width: 100%;
+    font-size: 1.1rem;
     text-align: center;
   }
   
-  /* Navigation buttons */
   .nav-buttons {
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
   }
   
-  .nav-buttons .nav-button {
+  .nav-button {
     width: 100%;
     text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
   }
-  
-  /* Hero section */
+
+  /* Sections - reduce padding significantly */
   section {
-    padding: 6rem 1.5rem;
+    padding: 4rem 1rem !important;
   }
   
   .hero-section {
     min-height: auto;
-    padding: 6rem 1.5rem;
+    padding: 6rem 1rem 4rem 1rem !important;
   }
-  
-  /* Main heading in hero */
-  .hero-heading {
-    font-size: 2.5rem;
+
+  /* Hero text - force smaller sizes */
+  h1, .hero-heading {
+    font-size: 2rem !important;
     line-height: 1.2;
+    word-wrap: break-word;
   }
   
-  /* Buttons - make full width and stack */
-  button {
-    width: 100%;
-    padding: 1rem 2rem;
-    font-size: 1rem;
+  .hero-text {
+    font-size: 1rem !important;
+    line-height: 1.7;
   }
-  
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  /* Stats grid - single column */
-  .grid-auto-fit {
-    grid-template-columns: 1fr;
-  }
-  
-  /* War cards - reduce padding */
-  .war-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  /* Story cards in expandable sections */
-  .stories-container {
-    padding: 1.5rem 1rem;
-  }
-  
-  /* Emoji sizing */
-  .stat-emoji {
-    font-size: 3rem;
-  }
-  
-  .war-emoji {
-    font-size: 3.5rem;
-  }
-  
-  /* Reduce all heading sizes */
+
+  /* All headings */
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem !important;
   }
   
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem !important;
   }
   
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem !important;
+  }
+
+  /* Paragraphs */
+  p, .section-intro {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  /* Buttons - stack and full width */
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
   }
   
-  /* Paragraphs and body text */
-  p {
+  button, .button-primary, .button-secondary {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
     font-size: 1rem;
   }
-  
-  /* Lists */
-  li {
-    font-size: 1rem;
+
+  /* Stats grid - single column */
+  .grid-auto-fit {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
   }
   
-  /* Solution section */
-  .solution-primary {
+  .stat-box {
     padding: 2rem 1.5rem;
   }
   
+  .stat-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem !important;
+  }
+  
+  .stat-description {
+    font-size: 0.95rem;
+  }
+
+  /* War cards */
+  .war-card {
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .war-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .war-description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .war-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 0;
+  }
+  
+  .war-toggle-button {
+    width: 100%;
+  }
+
+  /* Stories container */
+  .stories-container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .story-card {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-card h4 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Solution section */
+  .solution-primary {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+  }
+  
+  .solution-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  
   .solution-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem !important;
+    padding-top: 0;
   }
   
   .solution-subtitle {
     font-size: 1rem;
   }
   
+  .solution-steps {
+    padding: 1rem;
+  }
+  
+  .solution-steps div {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
   .solution-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
   
-  /* Follow-up measure cards */
-  .follow-up-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .solution-box {
+    padding: 1.5rem 1rem;
   }
   
+  .solution-box h4 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Follow-up cards */
   .follow-up-heading {
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
   }
   
-  /* CTA section */
+  .follow-up-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  .follow-up-card {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Solution CTA */
+  .solution-cta {
+    padding: 1.5rem 1rem;
+  }
+  
+  .solution-cta h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .solution-cta-text {
+    font-size: 1rem !important;
+  }
+  
+  .solution-cta-emphasis {
+    font-size: 1.1rem !important;
+  }
+
+  /* CTA Section */
+  .cta-text {
+    font-size: 1rem;
+  }
+  
+  .cta-highlight {
+    font-size: 1.1rem;
+  }
+  
+  .cta-quote {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .cta-quote p {
+    font-size: 1rem !important;
+  }
+  
+  .cta-action {
+    font-size: 1.1rem;
+  }
+  
   .cta-buttons {
     width: 100%;
   }
   
   .cta-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
   }
-  
-  .cta-highlight {
-    font-size: 1.2rem;
-  }
-  
-  .cta-action {
-    font-size: 1.2rem;
-  }
-  
-  .cta-quote p {
-    font-size: 1.1rem;
-  }
-  
-  /* Solution CTA */
-  .solution-cta {
-    padding: 2rem 1.5rem;
-  }
-  
-  .solution-cta-text {
-    font-size: 1.2rem;
-  }
-  
-  .solution-cta-emphasis {
-    font-size: 1.4rem;
-  }
-  
-  /* Contact Us Section */
+
+  /* Contact Us grid */
   .contact-us-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
   
   .contact-us-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
   }
   
   .contact-us-icon {
-    font-size: 2.5rem;
-  }
-  
-  .contact-us-link {
-    font-size: 1rem;
-  }
-  
-  /* Sources section links */
-  a {
-    word-break: break-word;
-  }
-  
-  /* Footer */
-  footer {
-    padding: 3rem 1.5rem;
-  }
-  
-  .footer-quote {
-    font-size: 1.2rem;
-  }
-  
-  /* Scroll indicator */
-  .scroll-indicator {
-    display: none;
-  }
-  
-  /* Divider centered */
-  .divider-centered {
-    margin-bottom: 3rem;
-  }
-  
-  /* Contact Hero */
-  .contact-hero {
-    padding-top: 8rem;
-    padding-bottom: 3rem;
-  }
-  
-  .contact-heading {
     font-size: 2rem;
   }
   
-  .contact-intro {
-    font-size: 1.1rem;
+  .contact-us-link {
+    font-size: 0.95rem;
+  }
+
+  /* Sources */
+  .sources-container h3 {
+    font-size: 1.3rem !important;
   }
   
-  /* Letter Section */
+  .sources-list li {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Divider */
+  .divider {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 2rem;
+  }
+
+  /* Max width containers */
+  .max-width-1200,
+  .max-width-900,
+  .max-width-800 {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+  
+  .footer-quote {
+    font-size: 1.1rem;
+  }
+
+  /* Hide scroll indicator on mobile */
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* === CONTACT PAGE === */
+  
+  .contact-hero {
+    padding-top: 6rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .contact-heading {
+    font-size: 1.8rem !important;
+  }
+  
+  .contact-intro {
+    font-size: 1rem;
+  }
+
+  /* Letter section */
   .letter-header {
     flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
+    gap: 0.75rem;
+    align-items: stretch;
   }
   
   .copy-button {
@@ -234,23 +354,20 @@
   }
   
   .letter-content {
-    padding: 1.5rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
-  
-  .letter-tips {
-    padding: 1.5rem;
-  }
-  
-  /* WriteToThem Section */
+
+  /* WriteToThem */
   .writetothem-card {
-    padding: 2rem;
     flex-direction: column;
+    padding: 1.5rem;
     text-align: center;
   }
   
   .writetothem-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
   }
   
   .writetothem-content p {
@@ -268,29 +385,34 @@
   }
   
   .writetothem-stat .stat-value {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-  
-  /* Contacts Section */
+
+  /* Contacts grid */
   .contacts-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   
   .category-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem !important;
   }
   
   .contact-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   
   .contact-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
-  /* Actions Grid */
+  .contact-relevance {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  /* Actions grid */
   .actions-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   
   .action-card {
@@ -298,12 +420,12 @@
   }
   
   .action-emoji {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  
-  /* Back Section */
+
+  /* Back section */
   .back-section {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem !important;
   }
   
   .back-button {
@@ -312,127 +434,39 @@
   }
 }
 
-/* Very small screens - under 480px */
-@media (max-width: 480px) {
-  nav {
-    padding: 0.75rem 1rem;
-  }
+/* Very small screens - under 400px */
+@media (max-width: 400px) {
   
-  .nav-title {
-    font-size: 1rem;
-  }
-  
-  .nav-buttons {
-    gap: 0.4rem;
-  }
-  
-  .nav-buttons .nav-button {
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
-  }
-  
-  section {
-    padding: 4rem 1rem;
-  }
-  
-  .hero-section {
-    padding: 4rem 1rem;
-  }
-  
-  .hero-heading {
-    font-size: 2rem;
+  h1, .hero-heading {
+    font-size: 1.6rem !important;
   }
   
   h2 {
-    font-size: 1.75rem;
-  }
-  
-  .war-card {
-    padding: 1.5rem 1rem;
-  }
-  
-  .solution-primary {
-    padding: 1.5rem 1rem;
-  }
-  
-  .solution-badge {
-    left: 20px;
-    font-size: 0.85rem;
-    padding: 0.4rem 1rem;
-  }
-  
-  button {
-    padding: 0.875rem 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.4rem !important;
   }
   
   .stat-number {
+    font-size: 1.8rem !important;
+  }
+  
+  .war-emoji {
     font-size: 2.5rem;
   }
   
-  .follow-up-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  .contact-hero {
-    padding-top: 6rem;
-  }
-  
-  .contact-heading {
-    font-size: 1.75rem;
-  }
-  
-  .letter-content {
-    padding: 1rem;
-    font-size: 0.85rem;
-  }
-  
-  .writetothem-card {
-    padding: 1.5rem;
-  }
-  
-  .writetothem-stats {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-/* Tablet landscape - 769px to 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
   section {
-    padding: 6rem 2rem;
-  }
-  
-  .hero-section {
-    padding: 6rem 2rem;
+    padding: 3rem 0.75rem !important;
   }
   
   nav {
-    padding: 1.5rem 2rem;
+    padding: 0.75rem;
   }
   
-  .nav-buttons {
-    gap: 0.75rem;
+  .nav-title {
+    font-size: 0.95rem;
   }
   
   .nav-button {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .grid-auto-fit {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
-  .solution-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
-  .follow-up-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
-  .contact-us-grid {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
   }
 }
