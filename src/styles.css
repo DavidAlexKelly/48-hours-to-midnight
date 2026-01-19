@@ -58,6 +58,17 @@ nav.scrolled {
   backdrop-filter: blur(10px);
 }
 
+nav.menu-open {
+  background: rgba(0, 0, 0, 0.98);
+}
+
+/* Navbar header container */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-title {
   margin: 0;
   font-size: 1.5rem;
@@ -98,6 +109,42 @@ nav.scrolled {
 .nav-button:hover {
   background: #fff;
   color: #000;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger animation when open */
+.hamburger-line.open:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* Hero section scroll indicator animation */
