@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import StatBox from '../components/Statbox';
 import WarCard from '../components/WarCard';
+import EmailSignup from '../components/EmailSignup';
 
 const HomePage: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -179,7 +180,14 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
+              {/* Join Campaign Section */}
+        <section className="join-campaign-section">
+          <div className="max-width-900">
+            <h2>JOIN THE CAMPAIGN</h2>
+            <div className="divider divider-centered"></div>
+            <EmailSignup />
+          </div>
+        </section>
       {/* CTA Section */}
       <section className="cta-section">
         <div className="max-width-900">
