@@ -22,6 +22,7 @@ const HomePage: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -53,9 +54,7 @@ const HomePage: React.FC = () => {
               </React.Fragment>
             ))}
           </h1>
-
           <p className="hero-text">{hero.description}</p>
-
           <div className="hero-buttons">
             <button className="button-secondary" onClick={() => scrollToSection('problem')}>
               {hero.buttons.learnMore}
@@ -65,7 +64,6 @@ const HomePage: React.FC = () => {
             </button>
           </div>
         </div>
-
         <div className="scroll-indicator">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
             <path d="M12 5v14M19 12l-7 7-7-7" />
@@ -79,7 +77,6 @@ const HomePage: React.FC = () => {
           <h2>{problem.title}</h2>
           <div className="divider"></div>
           <p className="section-intro">{problem.description}</p>
-
           <div className="grid-auto-fit">
             {problem.stats.map((stat, index) => (
               <StatBox
@@ -98,7 +95,6 @@ const HomePage: React.FC = () => {
         <div className="max-width-1200">
           <h2 className="text-center">{wars.title}</h2>
           <div className="divider divider-centered"></div>
-
           {wars.sections.map((war) => (
             <WarCard
               key={war.id}
@@ -145,7 +141,6 @@ const HomePage: React.FC = () => {
                   ))}
                 </ul>
               </div>
-
               <div className="solution-box destroys">
                 <h4>✗ What This Destroys</h4>
                 <ul>
@@ -159,7 +154,6 @@ const HomePage: React.FC = () => {
 
           {/* Follow-up Measures */}
           <h3 className="follow-up-heading">{solution.followUp.title}</h3>
-
           <div className="follow-up-grid">
             {solution.followUp.measures.map((measure, index) => (
               <div key={index} className="follow-up-card">
@@ -180,32 +174,28 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-              {/* Join Campaign Section */}
-        <section className="join-campaign-section">
-          <div className="max-width-900">
-            <h2>JOIN THE CAMPAIGN</h2>
-            <div className="divider divider-centered"></div>
-            <EmailSignup />
-          </div>
-        </section>
+
+      {/* Join Campaign Section */}
+      <section className="join-campaign-section">
+        <div className="max-width-900">
+          <h2>JOIN THE CAMPAIGN</h2>
+          <div className="divider divider-centered"></div>
+          <EmailSignup />
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section">
         <div className="max-width-900">
           <h2>{callToAction.title}</h2>
           <p className="cta-text">{callToAction.text}</p>
           <p className="cta-highlight">{callToAction.highlight}</p>
-
           <div className="cta-quote">
             <p>"{callToAction.quote}"</p>
           </div>
-
           <p className="cta-action">{callToAction.action}</p>
-
           <div className="cta-buttons">
-            <button className="button-primary cta-button cta-button-disabled" disabled>
-              {callToAction.buttons.download}
-            </button>
-            <Link to="/contact" className="button-secondary cta-button">
+            <Link to="/contact" className="button-primary cta-button">
               {callToAction.buttons.contact}
             </Link>
           </div>
@@ -216,9 +206,8 @@ const HomePage: React.FC = () => {
       <section id="contact-us" className="contact-us-section">
         <div className="max-width-900">
           <h2>{contactUs.title}</h2>
-          <div className="divider"></div>
+          <div className="divider divider-centered"></div>
           <p className="section-intro">{contactUs.description}</p>
-
           <div className="contact-us-grid">
             <div className="contact-us-card">
               <div className="contact-us-icon">📧</div>
@@ -227,7 +216,6 @@ const HomePage: React.FC = () => {
                 {contactUs.email}
               </a>
             </div>
-
             <div className="contact-us-card">
               <div className="contact-us-icon">📞</div>
               <h4>Phone</h4>
@@ -245,7 +233,6 @@ const HomePage: React.FC = () => {
           <h2>{sources.title}</h2>
           <div className="divider"></div>
           <p className="section-intro">{sources.description}</p>
-
           <div className="sources-container">
             {sources.categories.map((category, categoryIndex) => (
               <React.Fragment key={categoryIndex}>
