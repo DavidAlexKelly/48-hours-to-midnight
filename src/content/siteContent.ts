@@ -420,28 +420,28 @@ Yours sincerely,
           category: "Government Ministers",
           contacts: [
             {
-              name: "Rt Hon Peter Kyle MP",
+              name: "Rt Hon Liz Kendall MP",
               role: "Secretary of State for Science, Innovation and Technology",
               relevance: "Oversees digital policy, AI regulation, and online safety implementation",
-              email: "peter.kyle.mp@parliament.uk",
-              constituency: "Hove and Portslade",
-              twitter: "@peterkyle"
+              email: "liz.kendall.mp@parliament.uk",
+              constituency: "Leicester West",
+              twitter: "@LizKendall"
             },
             {
-              name: "Feryal Clark MP",
-              role: "Parliamentary Under-Secretary of State for AI and Digital Government",
-              relevance: "Direct responsibility for AI policy and digital regulation",
-              email: "feryal.clark.mp@parliament.uk",
-              constituency: "Enfield North",
-              twitter: "@FeryalClark"
+              name: "Kanishka Narayan MP",
+              role: "Parliamentary Under-Secretary of State for AI and Online Safety",
+              relevance: "Direct responsibility for AI policy, online safety regulation, and digital protection",
+              email: "kanishka.narayan.mp@parliament.uk",
+              constituency: "Vale of Glamorgan",
+              twitter: "@KanishkaNarayan"
             },
             {
-              name: "Rt Hon Yvette Cooper MP",
+              name: "Rt Hon Shabana Mahmood MP",
               role: "Home Secretary",
               relevance: "Responsible for online crime, child protection, and national security threats from foreign interference",
-              email: "yvette.cooper.mp@parliament.uk",
-              constituency: "Pontefract, Castleford and Knottingley",
-              twitter: "@YvetteCooperMP"
+              email: "shabana.mahmood.mp@parliament.uk",
+              constituency: "Birmingham Ladywood",
+              twitter: "@ShabanaMahmood"
             }
           ]
         },
