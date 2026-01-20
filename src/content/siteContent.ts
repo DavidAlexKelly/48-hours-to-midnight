@@ -15,22 +15,22 @@ export const siteContent = {
 
   problem: {
     title: "YOU'RE NOT TALKING TO REAL PEOPLE",
-    description: "Right now, on UK social media platforms, somewhere between 20-40% of accounts aren't human. They're bots—automated accounts run by foreign governments, predator networks, AI companies, and scammers. In the 2024 UK elections, just 10 bot accounts posted over 60,000 times, reaching an estimated 150 million views, according to Global Witness investigations.",
+    description: "Right now, on UK social media platforms, somewhere between 20-40% of accounts aren't human. They're bots: automated accounts run by foreign governments, predator networks, AI companies, and scammers. In the 2024 UK elections, just 10 bot accounts posted over 60,000 times, reaching an estimated 150 million views, according to Global Witness investigations.",
     stats: [
       {
         emoji: "🤖",
         number: "8.5%+",
-        description: "of Twitter/X users are bots—23 million accounts generating two-thirds of all tweets (Loughborough University, 2024). During elections, this figure can reach 20-40%."
+        description: "of Twitter/X users are bots, accounting for 23 million accounts that generate two-thirds of all tweets (Loughborough University, 2024). During elections, this figure can reach 20-40%."
       },
       {
         emoji: "💰",
         number: "£11.4bn",
-        description: "stolen annually from British families through bot-driven scams and fraud—up £4bn from 2023 (Global Anti-Scam Alliance, 2024)."
+        description: "stolen annually from British families through bot-driven scams and fraud, up £4bn from 2023 (Global Anti-Scam Alliance, 2024)."
       },
       {
         emoji: "🎯",
         number: "73%",
-        description: "success rate for GPT-4.5 passing as human in Turing tests. You can't tell the difference anymore (UC San Diego, 2024)."
+        description: "success rate for GPT-4.5 passing as human in Turing tests. You simply can't tell the difference anymore (UC San Diego, 2024)."
       }
     ]
   },
@@ -42,7 +42,7 @@ export const siteContent = {
         id: "children",
         emoji: "🛡️",
         title: "THE WAR FOR OUR CHILDREN",
-        description: "Bot networks groom children at industrial scale. The NSPCC reports an 82% increase in online grooming crimes from 2017-2023, with nearly 34,000 cases recorded—25% targeting primary school children. The Internet Watch Foundation documented a 380% rise in AI-generated child sexual abuse material in 2024, with images so realistic they're indistinguishable from photographs. A 14-year-old girl joins what she thinks is a support group for eating disorders. Half the \"girls\" encouraging her to starve are bots run by pro-anorexia networks. She thinks she's found community. She's found a death cult.",
+        description: "Bot networks groom children at industrial scale. The NSPCC reports an 82% increase in online grooming crimes from 2017-2023, with nearly 34,000 cases recorded and 25% targeting primary school children. The Internet Watch Foundation documented a 380% rise in AI-generated child sexual abuse material in 2024, with images so realistic they're indistinguishable from photographs. A 14-year-old girl joins what she thinks is a support group for eating disorders. Half the \"girls\" encouraging her to starve are bots run by pro-anorexia networks. She thinks she's found community. She's found a death cult.",
         points: [
           "Children's developing brains cannot distinguish sophisticated AI from real peers",
           "Bot networks amplify self-harm content to vulnerable teenagers",
@@ -81,12 +81,12 @@ export const siteContent = {
         id: "democracy",
         emoji: "🗳️",
         title: "THE WAR FOR OUR DEMOCRACY",
-        description: "Foreign governments are stealing British elections without firing a shot. Global Witness found that in the 2024 UK election, just 10 bot accounts posted 60,000+ times, reaching 150 million views. Carnegie Mellon researchers analyzing the Chinese spy balloon incident found 64% of Chinese tweets and 35% of US tweets were bot-generated. In a documented 2024 case, a Labour councillor voted to approve local housing. Within one hour, 500 \"residents\" flooded her inbox opposing it. Later analysis revealed: 480 of those accounts were bots.",
+        description: "Foreign governments are stealing British elections without firing a shot. Global Witness found that in the 2024 UK election, just 10 bot accounts posted 60,000+ times, reaching 150 million views. Carnegie Mellon researchers analysing the Chinese spy balloon incident found 64% of Chinese tweets and 35% of US tweets were bot-generated. In a documented 2024 case, a Labour councillor voted to approve local housing. Within one hour, 500 \"residents\" flooded her inbox opposing it. Later analysis revealed that 480 of those accounts were bots.",
         points: [
           "Russian and Chinese bot networks run coordinated influence campaigns daily",
           "MPs like Dawn Butler and Diane Abbott face bot-amplified harassment",
           "Trending topics are manufactured by coordinated bot networks",
-          "Women and minority MPs disproportionately targeted, making democracy less representative"
+          "Women and minority MPs are disproportionately targeted, making democracy less representative"
         ],
         sources: "Sources: Global Witness (2024), ComplyCube/Carnegie Mellon (2024), Byline Times (2024)",
         stories: [
@@ -96,22 +96,22 @@ export const siteContent = {
             source: "Global Witness",
             sourceUrl: "https://www.globalwitness.org/en/campaigns/digital-threats/investigation-reveals-content-posted-bot-accounts-x-has-been-seen-150-million-times-ahead-uk-elections/",
             summary: "Just 10 bot-like accounts posted over 60,000 tweets during the 2024 UK election campaign, generating an estimated 150 million views. The accounts posted 200-500 times per day on topics like climate change and migration.",
-            details: "Global Witness identified accounts with clear bot behavior: no profile pictures, newly created accounts, posting at inhuman rates. The investigation found these bots spread disinformation and hate speech, with the potential to sow division and influence election outcomes. The accounts were active during the entire campaign period from May 22 to July 4, 2024."
+            details: "Global Witness identified accounts with clear bot behaviour: no profile pictures, newly created accounts, posting at inhuman rates. The investigation found these bots spread disinformation and hate speech, with the potential to sow division and influence election outcomes. The accounts were active during the entire campaign period from May 22 to July 4, 2024."
           },
           {
             title: "Diane Abbott Receives 10x More Abuse Than Any Other MP",
             date: "2017-2024",
             source: "Amnesty International / BBC",
             sourceUrl: "https://www.amnesty.org.uk/online-violence-women-mps",
-            summary: "Diane Abbott, the UK's first Black female MP, receives an astonishing 31.6% of ALL abusive tweets sent to female MPs—10 times more than any other politician. In the run-up to the 2017 election, she received 45% of all abusive tweets, averaging 51 abusive tweets per day.",
-            details: "Research by Amnesty International found that BAME (Black, Asian, and Minority Ethnic) women MPs receive 35% more abusive tweets than their white colleagues. The abuse toward Abbott is often explicitly racist and misogynistic. In 2024, Conservative donor Frank Hester said Abbott made him 'want to hate all black women' and that 'she should be shot'—comments the PM eventually called 'racist and wrong.'"
+            summary: "Diane Abbott, the UK's first Black female MP, receives an astonishing 31.6% of ALL abusive tweets sent to female MPs, ten times more than any other politician. In the run-up to the 2017 election, she received 45% of all abusive tweets, averaging 51 abusive tweets per day.",
+            details: "Research by Amnesty International found that BAME (Black, Asian, and Minority Ethnic) women MPs receive 35% more abusive tweets than their white colleagues. The abuse toward Abbott is often explicitly racist and misogynistic. In 2024, Conservative donor Frank Hester said Abbott made him 'want to hate all black women' and that 'she should be shot', comments the PM eventually called 'racist and wrong.'"
           },
           {
             title: "480 of 500 'Residents' Opposing Housing Were Bots",
             date: "2024",
             source: "Referenced in campaign materials",
             sourceUrl: "#sources",
-            summary: "A Labour councillor voted to approve local housing. Within one hour, 500 'residents' flooded her inbox opposing the decision. Later analysis revealed 480 of those accounts were bots—a 96% bot rate.",
+            summary: "A Labour councillor voted to approve local housing. Within one hour, 500 'residents' flooded her inbox opposing the decision. Later analysis revealed 480 of those accounts were bots, a 96% bot rate.",
             details: "This case demonstrates how bot networks can create the appearance of grassroots opposition to democratic decisions, undermining local democracy. Council members faced what appeared to be overwhelming constituent opposition, but it was manufactured by automated accounts designed to look like real local residents."
           },
           {
@@ -119,7 +119,7 @@ export const siteContent = {
             date: "2024",
             source: "Carnegie Mellon University",
             sourceUrl: "https://www.complycube.com/en/information-warfare-political-bots-on-social-media/",
-            summary: "Researchers analyzed 1.2 million tweets about the Chinese spy balloon incident, finding 64% of Chinese tweets and 35% of US tweets were generated by bots—showing both sides using automation to shape narratives.",
+            summary: "Researchers analysed 1.2 million tweets about the Chinese spy balloon incident, finding 64% of Chinese tweets and 35% of US tweets were generated by bots, showing both sides using automation to shape narratives.",
             details: "The study revealed sophisticated bot networks battling online over a geopolitical incident, with the majority of the conversation being artificially generated. This demonstrates how international actors use bot armies to influence public perception during sensitive diplomatic events."
           }
         ]
@@ -128,11 +128,11 @@ export const siteContent = {
         id: "culture",
         emoji: "🤖",
         title: "THE WAR FOR HUMAN CULTURE",
-        description: "AI is drowning out human voices. A rigorous UC San Diego study found OpenAI's GPT-4.5 passed the Turing test with a 73% success rate—meaning nearly three-quarters of people couldn't tell it was AI. Stanford researchers confirmed GPT-4 passes personality tests within normal human ranges. More alarmingly, only 67% of actual humans were correctly identified as humans in these tests—people are now mistaking humans for AI. That was six months ago. Today's models? Indistinguishable.",
+        description: "AI is drowning out human voices. A rigorous UC San Diego study found OpenAI's GPT-4.5 passed the Turing test with a 73% success rate, meaning nearly three-quarters of people couldn't tell it was AI. Stanford researchers confirmed GPT-4 passes personality tests within normal human ranges. More alarmingly, only 67% of actual humans were correctly identified as humans in these tests. People are now mistaking humans for AI. That was six months ago. Today's models? Indistinguishable.",
         points: [
           "Every social interaction could be with AI, and you'd never know",
-          "Real artists, writers, and activists buried under infinite AI-generated spam",
-          "Children forming relationships with entities they think are human",
+          "Real artists, writers, and activists are buried under infinite AI-generated spam",
+          "Children are forming relationships with entities they think are human",
           "In five years, human culture online may cease to exist"
         ],
         sources: "Sources: UC San Diego (2024), Stanford University (2024), Live Science (2024)",
@@ -143,7 +143,7 @@ export const siteContent = {
             source: "Arup / Multiple outlets",
             sourceUrl: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/jan-2025/how-to-guard-against-voice-cloning-and-deepfake-scams",
             summary: "A finance worker at Arup's Hong Kong office transferred £20 million after a video call with what appeared to be the company's CFO and other executives. Every face on the call was a deepfake.",
-            details: "The worker initially suspected fraud and suggested a video call to verify—exactly what security experts recommend. But the fraudsters were prepared: they created deepfake videos of multiple executives, complete with synchronized lip movements and realistic facial expressions. The money had vanished into criminal accounts by the time the fraud was discovered."
+            details: "The worker initially suspected fraud and suggested a video call to verify, exactly what security experts recommend. But the fraudsters were prepared: they created deepfake videos of multiple executives, complete with synchronised lip movements and realistic facial expressions. The money had vanished into criminal accounts by the time the fraud was discovered."
           },
           {
             title: "28% of UK Adults Targeted by AI Voice Cloning Scams",
@@ -151,7 +151,7 @@ export const siteContent = {
             source: "Starling Bank / TechRadar",
             sourceUrl: "https://www.pindrop.com/article/uk-deepfake-voice-scams/",
             summary: "More than one in four UK adults report being targeted by AI voice cloning scams in the past year, with 40% of those targeted successfully scammed. The voices impersonated family members, bank officials, and HMRC agents.",
-            details: "Modern AI can clone a voice with 85% accuracy using just 3-5 seconds of audio—easily harvested from social media videos. The emotional realism of a cloned voice makes rational skepticism nearly impossible. Victims report being contacted by what sounded exactly like their grandchildren in distress, their boss demanding urgent transfers, or their elderly parents needing help."
+            details: "Modern AI can clone a voice with 85% accuracy using just 3-5 seconds of audio, easily harvested from social media videos. The emotional realism of a cloned voice makes rational scepticism nearly impossible. Victims report being contacted by what sounded exactly like their grandchildren in distress, their boss demanding urgent transfers, or their elderly parents needing help."
           },
           {
             title: "£1 Billion Lost to AI Scams in Just 3 Months",
@@ -159,7 +159,7 @@ export const siteContent = {
             source: "Money Week / Multiple sources",
             sourceUrl: "https://www.mclarencapital.co.uk/mclaren-blog/2024/11/15/the-voice-cloning-ai-scam-you-need-to-be-aware-of",
             summary: "AI-enabled scams cost UK residents £1 billion in the first three months of 2024 alone. Half of Britons now say they feel 'more at risk of scams' due to AI technology.",
-            details: "The scams include AI-generated investment advice featuring deepfakes of trusted financial figures, voice cloning for 'family emergency' frauds, and sophisticated phishing emails that perfectly mimic writing styles. AI has increased both the scale and sophistication of fraud, with criminals able to target thousands of victims simultaneously with personalized attacks."
+            details: "The scams include AI-generated investment advice featuring deepfakes of trusted financial figures, voice cloning for 'family emergency' frauds, and sophisticated phishing emails that perfectly mimic writing styles. AI has increased both the scale and sophistication of fraud, with criminals able to target thousands of victims simultaneously with personalised attacks."
           },
           {
             title: "Mother Mistakes AI Chatbot for Human Predator",
@@ -205,7 +205,7 @@ export const siteContent = {
       measures: [
         {
           title: "Ban AI-Generated Content Masquerading as Human",
-          description: "Require all AI-generated images, videos, and text to be clearly labeled. Make it illegal to use deepfakes or AI content to impersonate real people. Criminal penalties for AI-enabled fraud and manipulation.",
+          description: "Require all AI-generated images, videos, and text to be clearly labelled. Make it illegal to use deepfakes or AI content to impersonate real people. Criminal penalties for AI-enabled fraud and manipulation.",
           stops: "Stops: Deepfake scams, AI chatbots pretending to be human, celebrity impersonation fraud"
         },
         {
@@ -336,7 +336,7 @@ export const siteContent = {
           },
           {
             name: "Stanford University (2024)",
-            description: "ChatGPT-4 passed rigorous Turing test using personality assessments and behavioral economics games, testing within normal human ranges",
+            description: "ChatGPT-4 passed rigorous Turing test using personality assessments and behavioural economics games, testing within normal human ranges",
             url: "https://humsci.stanford.edu/feature/study-finds-chatgpts-latest-bot-behaves-humans-only-better",
             displayUrl: "stanford.edu"
           }
@@ -351,7 +351,7 @@ export const siteContent = {
     
     letterTemplate: {
       title: "Template Letter",
-      instructions: "Copy this template and personalise it with your details. Personal stories and local concerns make letters more impactful—feel free to add your own experiences.",
+      instructions: "Copy this template and personalise it with your details. Personal stories and local concerns make letters more impactful, so feel free to add your own experiences.",
       content: `Dear [MP NAME / MINISTER NAME],
 
 I am writing to you as your constituent in [YOUR CONSTITUENCY] to express my serious concern about the growing threat that bots and AI impersonation pose to our democracy, our children, and our society.
@@ -388,7 +388,7 @@ Yours sincerely,
 
     writeToThem: {
       title: "Contact Your MP",
-      description: "Don't know who your MP is? WriteToThem makes it easy—just enter your postcode and they'll handle the rest.",
+      description: "Don't know who your MP is? WriteToThem makes it easy. Just enter your postcode and they'll handle the rest.",
       cardTitle: "WriteToThem.com",
       cardDescription: "A free, non-partisan service run by mySociety. Enter your postcode to find your MP and send them a message directly.",
       buttonText: "Find Your MP →",
