@@ -546,6 +546,28 @@
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
   }
+
+  /* Founders section mobile */
+.founders-desktop {
+  display: none;
+}
+
+.founders-mobile {
+  display: block;
+}
+
+.founders-label {
+  font-size: 1.2rem;
+}
+
+.founders-credit {
+  font-size: 1.2rem;
+}
+
+.founder-name {
+  display: block;
+  margin: 0.75rem 0;
+}
 }
 
 @media (max-width: 400px) {

@@ -203,33 +203,42 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact-us" className="contact-us-section">
-        <div className="max-width-900">
-          <h2>{contactUs.title}</h2>
-          <div className="divider divider-centered"></div>
-          <p className="section-intro">{contactUs.description}</p>
-          <div className="contact-us-grid">
-            <div className="contact-us-card">
-              <div className="contact-us-icon">✉️</div>
-              <h4>Email</h4>
-              <a href={`mailto:${contactUs.email}`} className="contact-us-link">
-                {contactUs.email}
-              </a>
-            </div>
-            <div className="contact-us-card">
-              <div className="contact-us-icon">📞</div>
-              <h4>Phone</h4>
-              <a href={`tel:${contactUs.phone.replace(/\s/g, '')}`} className="contact-us-link">
-                {contactUs.phone}
-              </a>
-            </div>
+    <section id="contact-us" className="contact-us-section">
+      <div className="max-width-900">
+        <h2>{contactUs.title}</h2>
+        <div className="divider divider-centered"></div>
+        <p className="section-intro">{contactUs.description}</p>
+        <div className="contact-us-grid">
+          <div className="contact-us-card">
+            <div className="contact-us-icon">✉️</div>
+            <h4>Email</h4>
+            <a href={`mailto:${contactUs.email}`} className="contact-us-link">
+              {contactUs.email}
+            </a>
           </div>
-          <div className="founders-section">
-            <p className="founders-label">{contactUs.foundersLabel}</p>
-            <p className="founders-credit">{contactUs.founders}</p>
+          <div className="contact-us-card">
+            <div className="contact-us-icon">📞</div>
+            <h4>Phone</h4>
+            <a href={`tel:${contactUs.phone.replace(/\s/g, '')}`} className="contact-us-link">
+              {contactUs.phone}
+            </a>
           </div>
         </div>
-      </section>
+        <div className="founders-section">
+          <p className="founders-label">{contactUs.foundersLabel}</p>
+          <div className="founders-credit">
+            <span className="founders-desktop">
+              {contactUs.foundersDesktop.join(' ● ')}
+            </span>
+            <div className="founders-mobile">
+              {contactUs.foundersMobile.map((founder, index) => (
+                <span key={index} className="founder-name">— {founder} —</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* Sources Section */}
       <section id="sources" className="sources-section">

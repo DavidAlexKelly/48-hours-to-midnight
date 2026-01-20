@@ -245,7 +245,16 @@ export const siteContent = {
     email: "48hourstomidnight@gmail.com",
     phone: "07535 024330",
     foundersLabel: "Founders",
-    founders: "Tomas Nowak ● David Zarraga Kelly ● Flavia Colonna"
+    foundersDesktop: [
+      "Tomas Nowak",
+      "David Zarraga Kelly",
+      "Flavia Colonna"
+    ],
+    foundersMobile: [
+      "David Zarraga Kelly",
+      "Tomas Nowak",
+      "Flavia Colonna"
+    ]
   },
 
   sources: {

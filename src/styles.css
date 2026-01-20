@@ -1390,3 +1390,16 @@ a:hover {
   letter-spacing: 0.5px;
   margin-top: 0.75rem;
 }
+
+.founders-desktop {
+  display: inline;
+}
+
+.founders-mobile {
+  display: none;
+}
+
+.founder-name {
+  display: block;
+  margin: 0.5rem 0;
+}
