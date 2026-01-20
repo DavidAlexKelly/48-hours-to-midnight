@@ -1368,3 +1368,12 @@ a:hover {
   position: relative;
   z-index: 1;
 }
+
+/* Founders credit */
+.founders-credit {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  letter-spacing: 0.5px;
+}

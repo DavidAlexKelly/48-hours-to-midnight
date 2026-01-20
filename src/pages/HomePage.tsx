@@ -210,7 +210,7 @@ const HomePage: React.FC = () => {
           <p className="section-intro">{contactUs.description}</p>
           <div className="contact-us-grid">
             <div className="contact-us-card">
-              <div className="contact-us-icon">📧</div>
+              <div className="contact-us-icon">✉️</div>
               <h4>Email</h4>
               <a href={`mailto:${contactUs.email}`} className="contact-us-link">
                 {contactUs.email}
@@ -224,6 +224,7 @@ const HomePage: React.FC = () => {
               </a>
             </div>
           </div>
+          <p className="founders-credit">{contactUs.founders}</p>
         </div>
       </section>
 
