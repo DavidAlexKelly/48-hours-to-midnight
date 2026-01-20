@@ -243,7 +243,8 @@ export const siteContent = {
     title: "CONTACT US",
     description: "Want to get involved, share your story, or ask a question? We'd love to hear from you.",
     email: "48hourstomidnight@gmail.com",
-    phone: "07535 024330"
+    phone: "07535 024330",
+    founders: "Tomas Nowak ● David Zarraga Kelly ● Flavia Colonna"
   },
 
   sources: {
