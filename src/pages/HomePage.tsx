@@ -224,7 +224,10 @@ const HomePage: React.FC = () => {
               </a>
             </div>
           </div>
-          <p className="founders-credit">{contactUs.founders}</p>
+          <div className="founders-section">
+            <p className="founders-label">{contactUs.foundersLabel}</p>
+            <p className="founders-credit">{contactUs.founders}</p>
+          </div>
         </div>
       </section>
 

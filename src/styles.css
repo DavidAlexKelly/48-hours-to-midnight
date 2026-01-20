@@ -1370,10 +1370,23 @@ a:hover {
 }
 
 /* Founders credit */
-.founders-credit {
-  margin-top: 2.5rem;
-  font-size: 0.9rem;
-  color: #666;
+.founders-section {
+  margin-top: 3rem;
   text-align: center;
+}
+
+.founders-label {
+  font-size: 1.35rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+.founders-credit {
+  font-size: 1.35rem;
+  color: #666;
   letter-spacing: 0.5px;
+  margin-top: 0.75rem;
 }
